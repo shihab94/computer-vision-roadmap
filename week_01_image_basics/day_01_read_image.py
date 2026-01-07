@@ -1,7 +1,9 @@
 import cv2 as cv
 
+from utils.common import IMAGE_FOLDER_PATH
+
 # read image
-image = cv.imread('jack_jones.png')
+image = cv.imread(IMAGE_FOLDER_PATH+'jack_jones.png')
 
 if image is None :
    print("No image found")
